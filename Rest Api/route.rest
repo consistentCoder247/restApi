@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Arvind Kejriwal",
+    "subscribedToChannel" : "Dhruv Rathee"
+}
+
+###
+
+GET http://localhost:3000/subscribers/6491bd79d8089d15c044790b
+
+### 
+
+DELETE http://localhost:3000/subscribers/6491cb40c94faa271e4d74b1
+
+###
+
+PATCH http://localhost:3000/subscribers/6491bd79d8089d15c044790b
+Content-Type: application/json
+
+{
+    "name": "Namo Kaul"
+}
